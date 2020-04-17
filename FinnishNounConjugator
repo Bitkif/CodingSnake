@@ -7,7 +7,7 @@ def vowelcheck(x):
 		if i == x:
 			return True
 
-
+#TODO: Ändra deta till regex
 def main(x):
 	lista = []
 	for i in x:
