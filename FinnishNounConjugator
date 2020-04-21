@@ -1,15 +1,17 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+#This functions check for vowels in entered string and return True/False
 def vowelcheck(x):
 	v = ["a", "o", "u", "å", "e", "i", "y", "ä", "ö"]
 	for i in v:
 		if i == x:
 			return True
 
-#TODO: Ändra deta till regex
+#TODO: Change this to regex
 def main(x):
 	lista = []
+	#No point in making it a list as one can check the last letter with a_string[-1]
 	for i in x:
 		lista.append(i)
 	# does the noun end with a vowel?
@@ -79,7 +81,7 @@ def main(x):
 	
 
 while True:
-  UserInput = input("Write a Finnish noun or exit to end: ")
+  UserInput = input("Write a Finnish noun or type exit to end: ")
   if UserInput == "exit":
     break;
 	main(UserInput)
