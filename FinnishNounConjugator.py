@@ -7,7 +7,7 @@ def vowelcheck(x):
 	for i in v:
 		if i == x:
 			return True
-
+#TODO: Traditional Finnish nouns does not conjugate correctly e.g. Hauki should be hauen and not haukin
 #TODO: Change this to regex
 def main(x):
 	lista = []
@@ -81,7 +81,7 @@ def main(x):
 	
 
 while True:
-  UserInput = input("Write a Finnish noun or type exit to end: ")
-  if UserInput == "exit":
-    break;
-	main(UserInput)
+    UserInput = input("Write a Finnish noun or type exit to end: ")
+    if UserInput == "exit":
+      break;
+    main(UserInput)
